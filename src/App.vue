@@ -3,6 +3,7 @@
   import PageBand from './components/PageBand.vue'
   import PageTour from './components/PageTour.vue'
   import PageContact from './components/PageContact.vue'
+import WithProps from './components/WithProps.vue'
 
   export default{
     data(){
@@ -10,11 +11,17 @@
         page: "band"
       }
     },
+    methods:{
+      loadPage(page){
+        this.page = page;
+      }
+    },
     components:{
     SlideShow,
     PageBand,
     PageTour,
-    PageContact
+    PageContact,
+    WithProps
 }
   }
 </script>
@@ -51,6 +58,7 @@
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
   <SlideShow />
+  <WithProps text="I'm a VueJS DEV NOW !!!" />
   <PageBand v-if="page=='band'" />
   <PageTour v-if="page=='tour'" />
   <PageContact v-if="page=='contact'" />
