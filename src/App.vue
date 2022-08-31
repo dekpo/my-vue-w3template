@@ -21,7 +21,7 @@ import WithProps from './components/WithProps.vue'
     PageBand,
     PageTour,
     PageContact,
-    WithProps
+    //WithProps
 }
   }
 </script>
