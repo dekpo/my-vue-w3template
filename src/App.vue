@@ -1,5 +1,6 @@
 <script>
   import SlideShow from './components/SlideShow.vue'
+  import PageBand from './components/PageBand.vue'
 
   export default{
     data(){
@@ -8,8 +9,9 @@
       }
     },
     components:{
-      SlideShow
-    }
+    SlideShow,
+    PageBand
+}
   }
 </script>
 
@@ -45,7 +47,7 @@
 <!-- Page content -->
 <div class="w3-content" style="max-width:2000px;margin-top:46px">
   <SlideShow />
-
+  <PageBand />
 </div>
 <!-- End Page content -->
 <!-- Footer -->
